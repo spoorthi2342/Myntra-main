@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "./components/Navbar/Navbar";
+import Fashion from "./components/Fashion/Stylish"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +25,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar/>
         <ReduxProvider>{children}</ReduxProvider>
+        <Fashion/>
       </body>
+
       
     </html>
   );

@@ -20,15 +20,15 @@ export default function LogoAndMenuItems() {
   }
 
   return (
-    
-    
-    <div className="flex items-center ">
+     <div className="flex items-center ">
        {isLoading && <Preloader />}
     <Link href={"/"}>
     <Image
     src={logo}
     alt='logo'
-    className=" lg:w-6 md:h-5 max-sm:h-8 max-sm:mr-1 md:mx-5"
+    height={40}
+    width={40}
+    className=" lg:w-10 md:h-9 max-sm:h-9 max-sm:mr-1 md:mx-5"
 
     /> 
     </Link>
